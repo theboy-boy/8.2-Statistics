@@ -3,31 +3,33 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner; // Import this class to handle errors
 
+
 class Main {
   public static void main(String[] args) {
-    ArrayList<Integer> arr = new ArrayList<Integer>();
-    try {
-      Scanner myReader = new Scanner(new File("numbers.txt"));
-      while (myReader.hasNextLine()) {
-        arr.add(Integer.parseInt(myReader.nextLine()));
-      }
-      myReader.close();
-    } catch (FileNotFoundException e) {
-      System.out.println("An error occurred.");
-      e.printStackTrace();
-    }
-    for (Integer num : arr) {
-      System.out.println(num);
-    }
-    
+    // create an ArrayList to store the integers from the file
+
+    // read the integers from the file and store them in the ArrayList
+        // create a File object and a Scanner object to read the file
+
+        // use a while loop to read each integer from the file and add it to the ArrayList
+
+        // handle the FileNotFoundException if the file is not found
+
+    // call the average, standardDeviation, and mode methods and print their results
+  }
+  // implement the average method to calculate the average of the integers in the ArrayList
+  public static double average(ArrayList<Integer> arr) {
+    return 0.0;
   }
 
-  // public static double average(ArrayList<Integer>() arr)
+  // implement the standardDeviation method to calculate the standard deviation of the integers in the ArrayList
+  public static double standardDeviation(ArrayList<Integer> arr) {
+    return 0.0;
+  }
 
-
-  // public static double standardDeviation(ArrayList<Integer>() arr)
-
-
-  // public static int mode(ArrayList<Integer> arr)
+  // implement the mode method to calculate the mode of the integers in the ArrayList
+  public static int mode(ArrayList<Integer> arr) {
+    return 0;
+  }
 
 }
